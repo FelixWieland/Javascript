@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>Labyrinth</title>
+    <script type="text/javascript">
+    var size = 35;
+    var teststring;
+    var dungeonArray = new Array(size);
+    for (var i = 0; i < size; i++){
+      dungeonArray[i] = new Array(size);
+    }
+    function reloadMe() {
+      location.reload();
+    }
+    </script>
+    <script src="bridge.js"></script>
+    <script src="bridge.console.js"></script>
+    <script src="bridge.meta.js"></script>
+    <script src="testjs.js"></script>
+    <script src="testjs.meta.js"></script>
+    <script src="babylon.custom1.js"></script>
+
+
+</head>
+<body>
+  <canvas id="renderCanvas"></canvas>
+  <div id="minimap">
+  </div>
+  <div id="finished">
+    <p>Ziel gefunden!</p>
+    <button type="button" name="button" onclick="reloadMe()">Neues Labyrinth</button>
+  </div>
+</body>
+</html>
